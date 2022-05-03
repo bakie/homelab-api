@@ -1,0 +1,9 @@
+# Ignore all dotfiles
+.*
+!.gitignore
+!.python-version
+# Intellij
+.idea
+# testinfra
+__pycache__
+*.pyc
