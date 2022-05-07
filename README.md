@@ -26,4 +26,15 @@ poetry install
 
 When this is done you will have everything installed in the virtual env and are ready to start using it.
 
+### Initial project setup
+These are the initial commands to do the initial project setup, and do not need to run again.
+These are here fo
+```
+mkddir homelab_api
+cd homelab_api
+django-admin startproject homelab_api . # Note the trailing '.' character
+cd homelab/
+django-admin startapp meals
+```
+
 
