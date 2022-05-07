@@ -1,4 +1,4 @@
-# Homelab-api
+# Homelab_api
 
 A little django project
 

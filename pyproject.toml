@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "homelab-api"
+name = "homelab_api"
 version = "0.1.0"
 description = ""
 authors = ["Bakie <bakelants.developer@gmail.com>"]
