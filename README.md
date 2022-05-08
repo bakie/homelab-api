@@ -26,6 +26,19 @@ poetry install
 
 When this is done you will have everything installed in the virtual env and are ready to start using it.
 
+### MySQL setup and migrations
+We use docker compose to have a local mysql to which we can connect. Run the following command to start it up.
+The up command will create and start the containers defined in the docker-compose file. The -d option makes it run in detached mode.
+```
+docker-compose up -d
+```
+The credentials are defined in the docker-compose.yml file, for bot the root user as the application user.
+
+Next we need to run the migrations.
+```
+python manage.py migrate
+```
+
 ### Initial project setup
 These are the initial commands to do the initial project setup, and do not need to run again.
 These are here fo

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "homelab_api"
+      MYSQL_USER: "homelab_api_user"
+      MYSQL_PASSWORD: "homelab_api_password"
+    restart: always
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    container_name: "homelab_api_db"
