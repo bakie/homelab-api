@@ -39,6 +39,18 @@ Next we need to run the migrations.
 python manage.py migrate
 ```
 
+Now you can start the server
+```
+python manage.py runserver
+```
+
+### api documentation
+We generate the api docs using [drf-spectacular](https://github.com/tfranzel/drf-spectacular). The docs are generate via the command
+```
+python manage.py spectacular --file schema.yml
+```
+The docs can be views via /api/docs.
+
 ### Initial project setup
 These are the initial commands to do the initial project setup, and do not need to run again.
 These are here fo
@@ -47,7 +59,7 @@ mkddir homelab_api
 cd homelab_api
 django-admin startproject homelab_api . # Note the trailing '.' character
 cd homelab/
-django-admin startapp meals
+django-admin startapp meal
 ```
 
 
