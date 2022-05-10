@@ -23,6 +23,34 @@ paths:
                 items:
                   $ref: '#/components/schemas/Recipe'
           description: ''
+    post:
+      operationId: meal_recipe_create
+      description: API endpoint that allows recipes to be viewed.
+      tags:
+      - meal
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Recipe'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Recipe'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Recipe'
+        required: true
+      security:
+      - cookieAuth: []
+      - basicAuth: []
+      - {}
+      responses:
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recipe'
+          description: ''
   /meal/recipe/{id}:
     get:
       operationId: meal_recipe_retrieve

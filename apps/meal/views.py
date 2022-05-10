@@ -3,7 +3,7 @@ from apps.meal.models import Recipe
 from apps.meal.serializers import RecipeSerializer
 
 
-class RecipeList(generics.ListAPIView):
+class RecipeList(generics.ListCreateAPIView):
     """
     API endpoint that allows recipes to be viewed.
     """
