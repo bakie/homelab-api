@@ -53,9 +53,8 @@ The docs can be views via /api/docs.
 
 ### Initial project setup
 These are the initial commands to do the initial project setup, and do not need to run again.
-These are here fo
 ```
-mkddir homelab_api
+mkdir homelab_api
 cd homelab_api
 django-admin startproject homelab_api . # Note the trailing '.' character
 cd homelab/
